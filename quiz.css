@@ -1,0 +1,236 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center; /* Center the content */
+}
+
+h2 {
+    color: #fff;
+}
+
+#timer {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-top: 20px;
+    background-color: #000;
+    border: 2px solid #0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    animation: neon-pulse 1.5s infinite alternate; /* Neon pulse animation */
+}
+
+@keyframes neon-pulse {
+    from {
+        border-color: #0f0;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    to {
+        border-color: #0a0;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+}
+
+#question {
+    font-size: 18px;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.options li {
+    margin: 10px 0;
+    background-color: #000;
+    color: #0f0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options li:hover {
+    background-color: #111;
+}
+
+#prev-button,
+#next-button,
+#finish-button,
+#try-again-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prev-button:hover,
+#next-button:hover,
+#finish-button:hover,
+#try-again-button:hover {
+    background-color: #666;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+#result.active {
+    display: block;
+}
+
+/* quiz.css */
+
+/* Add neon effect to the finish quiz message */
+.neon-effect {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #000;
+    border: 2px solid #0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    animation: neon-pulse 1.5s infinite alternate; /* Neon pulse animation */
+}
+
+@keyframes neon-pulse {
+    from {
+        border-color: #0f0;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    to {
+        border-color: #0a0;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+}
+
+/* Adjust the styles of the neon message */
+#neon-message {
+    text-align: center;
+}
+
+#congrats-message,
+#score-message {
+    font-size: 18px;
+    color: #fff;
+}
+
+#try-again-button {
+    background-color: #0f0;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#try-again-button:hover {
+    background-color: #0a0;
+}
+
+/* quiz.css */
+
+/* Add keyframes animation for the title */
+@keyframes lightning {
+    0%, 100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0, 0 0 60px #0f0, 0 0 70px #0f0;
+    }
+    50% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0f0, 0 0 20px #0f0, 0 0 25px #0f0, 0 0 30px #0f0, 0 0 35px #0f0;
+    }
+}
+
+/* Add styles for the title */
+.title {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
+    animation: lightning 2s infinite linear; /* Apply the lightning animation */
+}
+
+/* Add the following styles for the "Previous" and "Next" buttons within the quiz container */
+#prev-button,
+#next-button {
+    background-color: #0f0;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#prev-button {
+    float: left; /* Align "Previous" button to the left */
+    margin-right: 10px; /* Add a small margin between buttons */
+}
+
+#next-button {
+    float: left; /* Align "Next" button to the left */
+}
+
+/* Rest of your existing styles... */
+/* quiz.css */
+
+/* Adjust the styles for the mute/unmute button */
+#mute-button {
+    position: fixed;
+    top: 25px;
+    right: 200px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust the font size */
+    color: #0f0;
+    transition: color 0.3s;
+}
+
+#mute-button:hover {
+    color: #0a0;
+}
+
+/* Add styles for the logout button */
+#logout-button {
+    position: fixed;
+    top: 20px;
+    right: 100px; /* Adjust the right property for spacing */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin for spacing between mute/unmute and logout buttons */
+    transition: background-color 0.3s;
+}
+
+#logout-button:hover {
+    background-color: #333;
+}

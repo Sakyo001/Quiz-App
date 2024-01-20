@@ -1,0 +1,14 @@
+
+This simple project is a quiz app that can add, edit, delete questions.
+the user can answer those questions to test it out, just like in quizzis website,
+but this is the simplest version since i have no time working with there, I only
+have few days before the school starts, so this simple project is only for warm-ups
+to reduce strains and pressure along the way.
+
+1. I will create a simple login and registration
+
+2. connect everything to the database
+
+3. add a center div for the questions and add
+
+
